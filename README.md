@@ -20,11 +20,14 @@ i.e. the Ytrain and Ytest variables.
 We are building two architectures: CNN and CNN, based on transfer learning
 
 - CNN
+
 For CNN, the name speaks for itself; a few layers of convolution and pooling layers are kept for feature learning and 
 reduction, reducing the image’s complexity, learning only the essential features, and then predicting using a fully 
 connected layer. We are using three layers of convolution layer and a pooling layer with a final dense layer.
 
 - CNN via Transfer Learning
+
+
 For the second model, CNN architecture was used in conjunction with a pre-trained model using the ImageNet 
 database. The model consisted of one Baselayer followed by MaxPooling and Dropout layers, and finally, four Dense 
 layers to learn all the features from the image. Softmax was used on the final activation layer. Adam was used as the 
